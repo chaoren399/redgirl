@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <solid android:color="#E95634" />
+        </shape>
+    </item>
+    <item android:bottom="2dp">
+        <bitmap android:src="@drawable/bg_map_bottom_menu" />
+    </item>
+
+</layer-list>

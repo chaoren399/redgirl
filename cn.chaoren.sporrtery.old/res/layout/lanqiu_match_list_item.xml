@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:background="@drawable/list_selector">
+	<RelativeLayout android:layout_height="fill_parent"
+		android:layout_width="fill_parent" android:layout_weight="4">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_centerInParent="true"
+			android:orientation="vertical">
+			<TextView android:id="@+id/num" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal"
+				style="@style/Style1" android:singleLine="true" />
+			<TextView android:id="@+id/shotdate" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal"
+				style="@style/itemTimeStyle" android:singleLine="true"  android:textSize="12sp"/>
+			<TextView android:id="@+id/shottime" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal"
+				style="@style/itemTimeStyle" android:singleLine="true" />
+		</LinearLayout>
+	</RelativeLayout>
+	<LinearLayout android:layout_height="fill_parent"
+		android:layout_width="fill_parent" android:orientation="vertical"
+		android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		android:layout_weight="1">
+		<RelativeLayout android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:layout_weight="1">
+			<LinearLayout android:layout_width="wrap_content" 
+			    android:layout_alignParentLeft="true" android:gravity="center_vertical"
+			    android:layout_height="fill_parent" android:orientation="horizontal">
+			    <TextView android:id="@+id/a_cn" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:text="湖人"
+				android:singleLine="true" style="@style/itemTeamNameStyle"
+				android:gravity="center_vertical" />
+			   <!--  <TextView android:id="@+id/h_cn" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" 
+				android:singleLine="true" style="@style/itemTeamNameStyle"
+				android:gravity="center_vertical"  
+				/> -->
+			    <TextView android:id="@+id/handicap" android:layout_width="wrap_content" android:layout_height="fill_parent"
+			        android:textColor="#ff0000" android:text="(+1)" android:gravity="center_vertical"
+			        />
+			    <View android:id="@+id/message" android:layout_width="20dip" android:layout_height="24dip" android:clickable="true"
+			        android:background="@drawable/message_btn_selector" android:layout_gravity="center_vertical" />
+			</LinearLayout>
+			
+			<TextView android:id="@+id/l_cn" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:layout_alignParentRight="true"
+				android:singleLine="true" style="@style/itemTeamNameStyle"
+				android:gravity="center_vertical" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:layout_weight="1">
+			<TextView android:id="@+id/h_cn" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:layout_alignParentLeft="true"
+				android:singleLine="true" style="@style/itemTeamNameStyle"
+				android:gravity="center_vertical" />
+			<ImageView android:id="@+id/sstime" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/quxiao"
+				android:layout_alignParentRight="true" />
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

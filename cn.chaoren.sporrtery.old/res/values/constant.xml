@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="setting_shared_name_xml">setting</string>
+    <string name="setting_socer_total_goal_xml">totalgoal</string>
+    <string name="setting_socer_score_xml">score</string>
+    <string name="setting_socer_alert_type_xml">socer_alerttype</string>
+    <string name="setting_basketball_alert_type_xml">basketball_alerttype</string>
+	<string name="setting_seperator">,</string>
+</resources>

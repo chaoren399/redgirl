@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!--
+    <RadioGroup
+        android:id="@+id/radiogroup_dianmian"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/filter_bg"
+        android:orientation="horizontal" >
+  
+        <RadioButton   
+            android:id="@+id/jincai"
+            style="@style/radioButton_pop_dianmian"
+            android:checked="true"
+            android:text="竞彩店" />
+        <TextView 
+            android:id="@+id/jincai"
+            style="@style/radioButton_pop_dianmian"
+            android:text="竞彩店" />
+        <RadioButton
+            android:id="@+id/ticai"
+            style="@style/radioButton_pop_dianmian"
+            android:text="体彩店" 
+            />
+    </RadioGroup>
+    -->
+
+    <RadioGroup
+        android:id="@+id/radiogroup_dianmian"  
+        android:layout_width="fill_parent"    
+        android:layout_height="45dip"  
+        android:background="@drawable/filter_bg" 
+         android:gravity="center_vertical" 
+        android:orientation="horizontal"  >
+
+
+        <RadioButton    
+            android:id="@+id/jincai"  
+            android:layout_width="fill_parent"    
+            android:layout_height="wrap_content"  
+            android:layout_weight="1"  
+             android:textColor="@color/gray2"
+            android:text="竞彩店"  
+        />  
+        <RadioButton    
+            android:id="@+id/ticai"  
+            android:layout_width="fill_parent"    
+            android:layout_height="wrap_content"  
+            android:layout_weight="1"  
+             android:textColor="@color/gray2"
+            android:text="体彩店"  
+        />  
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_guanzhu_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 我的关注界面 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabbg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/zuqiu_tab"
+                style="@style/Style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_l_select"
+                android:gravity="center"
+                android:text="@string/str_zuqiu" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/lanqiu_tab"
+                style="@style/Style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_l_normal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/str_lanqiu" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/zhanji_tab"
+                style="@style/Style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_l_normal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/zhanji" />
+        </RelativeLayout>
+       
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/zuqiu_guanzhu_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#ffffff"
+        android:divider="#00000000"
+        android:dividerHeight="0px"
+        android:scrollingCache="false" 
+        android:visibility="visible">
+    </ListView>
+
+    <ListView
+        android:id="@+id/lanqiu_guanzhu_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#ffffff"
+        android:divider="#00000000"
+        android:dividerHeight="0px"
+        android:scrollingCache="false"
+        android:visibility="gone" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/zhanji_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_titlebg"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+<!--  
+        <TextView
+            android:id="@+id/xuhao"
+            style="@style/Style3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true" 
+            android:text="序号"/>
+        -->
+        <TextView
+            android:id="@+id/wanfa"
+            style="@style/Style3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true" 
+            android:text="玩法"/>
+        <TextView
+            android:id="@+id/fangshi"
+            style="@style/Style3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true" 
+            android:text="方式"/>
+        <TextView
+            android:id="@+id/zhushu"
+            style="@style/Style3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true" 
+            android:text="注数"/>
+        <TextView
+            android:id="@+id/zhongjiang"
+            style="@style/Style3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true" 
+            android:text="金额"/>
+        <TextView
+            android:id="@+id/zhuangtai"
+            style="@style/Style3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="8dip"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:singleLine="true" 
+            android:text="状态"/>
+    </LinearLayout>
+
+      <ListView
+        android:id="@+id/zhanji_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#ffffff"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:visibility="gone" >
+    </ListView>
+</LinearLayout>

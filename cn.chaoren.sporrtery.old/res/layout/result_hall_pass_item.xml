@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="horizontal" android:background="@drawable/itembg1">
+	<LinearLayout android:id="@+id/dateLayout" android:layout_width="106dip" android:layout_height="150dip"
+	    android:orientation="vertical" >
+	    <TextView android:id="@+id/title" android:layout_width="fill_parent" android:layout_height="25dip"
+	        android:text="@string/show_time1" android:textColor="#000000" android:gravity="center"
+	        android:background="@drawable/itembg"
+	        />
+	    <TextView android:id="@+id/date" android:layout_width="fill_parent" android:layout_height="125dip"
+	        android:text="2012-01-11 08:45:25" android:textColor="#000000" android:gravity="center"
+	        android:background="@drawable/itembg1"
+	        />
+	</LinearLayout>
+	<LinearLayout android:id="@+id/rewardLayout" android:layout_width="214dip" android:layout_height="150dip"
+	    android:orientation="vertical" >
+	    <LinearLayout 
+	        android:background="@drawable/itembg"
+	        android:id="@+id/line0" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25dip">
+	        <TextView android:id="@+id/text0" android:layout_width="71dip" android:layout_height="25dip" android:gravity="center"
+	            android:background="@drawable/itembg" android:text="@string/hh" android:textColor="#000000"/>
+	        <TextView android:id="@+id/text1" android:layout_width="71dip" android:layout_height="25dip" android:gravity="center"
+	            android:background="@drawable/itembg" android:text="@string/hd" android:textColor="#000000"/>
+	        <TextView android:id="@+id/text2" android:layout_width="71dip" android:layout_height="25dip" android:gravity="center"
+	            android:background="@drawable/itembg" android:text="@string/ha" android:textColor="#000000"/>
+	        
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:background="@drawable/itembg"
+	        android:id="@+id/value_line0" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25dip">
+	       <LinearLayout android:orientation="horizontal" android:layout_width="71dip" android:layout_height="25dip"
+	           android:gravity="center"   android:background="@drawable/itembg1">
+	            <TextView android:id="@+id/text0" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	             android:text="@string/hh" android:textColor="#000000" android:tag="胜胜"/>
+	             <TextView android:id="@+id/text01" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	           android:text="@string/up" android:textColor="#000000" android:tag="胜胜1"/>
+	       </LinearLayout>
+	       <LinearLayout android:orientation="horizontal" android:layout_width="71dip" android:layout_height="25dip"
+	           android:gravity="center"   android:background="@drawable/itembg1">
+	            <TextView android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	           android:text="@string/hh" android:textColor="#000000" android:tag="胜平"/>
+	             <TextView android:id="@+id/text11" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	             android:text="@string/up" android:textColor="#000000" android:tag="胜平1"/>
+	       </LinearLayout>
+	       <LinearLayout android:orientation="horizontal" android:layout_width="71dip" android:layout_height="25dip"
+	           android:gravity="center"   android:background="@drawable/itembg1">
+	            <TextView android:id="@+id/text2" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	            android:text="@string/ha" android:textColor="#000000" android:tag="胜负"/>
+	             <TextView android:id="@+id/text21" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	            android:text="@string/up" android:textColor="#000000" android:tag="胜负1"/>
+	       </LinearLayout>
+	   
+	        
+	    </LinearLayout>
+	    
+	     <LinearLayout 
+	        android:background="@drawable/itembg"
+	        android:id="@+id/line1" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25dip">
+	        <TextView android:id="@+id/text0" android:layout_width="71dip" android:layout_height="25dip" android:gravity="center"
+	            android:text="@string/dh" android:textColor="#000000"/>
+	        <TextView android:id="@+id/text1" android:layout_width="71dip" android:layout_height="25dip" android:gravity="center"
+	             android:text="@string/dd" android:textColor="#000000"/>
+	        <TextView android:id="@+id/text2" android:layout_width="71dip" android:layout_height="25dip" android:gravity="center"
+	          android:text="@string/da" android:textColor="#000000"/>
+	        
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:background="@drawable/itembg"
+	        android:id="@+id/value_line1" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25dip">
+	       
+	         <LinearLayout android:orientation="horizontal" android:layout_width="71dip" android:layout_height="25dip"
+	           android:gravity="center"   android:background="@drawable/itembg1">
+	            <TextView android:id="@+id/text0" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	            android:text="@string/hh" android:textColor="#000000" android:tag="平胜"/>
+	             <TextView android:id="@+id/text01" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	             android:text="@string/up" android:textColor="#000000" android:tag="平胜1"/>
+	       </LinearLayout>
+	       <LinearLayout android:orientation="horizontal" android:layout_width="71dip" android:layout_height="25dip"
+	           android:gravity="center"   android:background="@drawable/itembg1">
+	            <TextView android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	             android:text="@string/hh" android:textColor="#000000" android:tag="平平"/>
+	             <TextView android:id="@+id/text11" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	            android:text="@string/up" android:textColor="#000000" android:tag="平平1"/>
+	       </LinearLayout>
+	       <LinearLayout android:orientation="horizontal" android:layout_width="71dip" android:layout_height="25dip"
+	           android:gravity="center"   android:background="@drawable/itembg1">
+	            <TextView android:id="@+id/text2" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	            android:text="@string/hh" android:textColor="#000000" android:tag="平负"/>
+	             <TextView android:id="@+id/text21" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	             android:text="@string/up" android:textColor="#000000" android:tag="平负1"/>
+	       </LinearLayout>
+	      
+	        
+	    </LinearLayout>
+	    
+	     <LinearLayout 
+	        android:background="@drawable/itembg"
+	        android:id="@+id/line2" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25dip">
+	        <TextView android:id="@+id/text0" android:layout_width="71dip" android:layout_height="25dip" android:gravity="center"
+	            android:background="@drawable/itembg" android:text="@string/ah" android:textColor="#000000"/>
+	        <TextView android:id="@+id/text1" android:layout_width="71dip" android:layout_height="25dip" android:gravity="center"
+	            android:background="@drawable/itembg" android:text="@string/ad" android:textColor="#000000"/>
+	        <TextView android:id="@+id/text2" android:layout_width="71dip" android:layout_height="25dip" android:gravity="center"
+	            android:background="@drawable/itembg" android:text="@string/aa" android:textColor="#000000"/>
+	        
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:background="@drawable/itembg"
+	        android:id="@+id/value_line2" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25dip">
+	       
+	        <LinearLayout android:orientation="horizontal" android:layout_width="71dip" android:layout_height="25dip"
+	           android:gravity="center"   android:background="@drawable/itembg1">
+	            <TextView android:id="@+id/text0" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	           android:text="@string/hh" android:textColor="#000000" android:tag="负胜"/>
+	             <TextView android:id="@+id/text01" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	           android:text="@string/up" android:textColor="#000000" android:tag="负胜1"/>
+	       </LinearLayout>
+	       <LinearLayout android:orientation="horizontal" android:layout_width="71dip" android:layout_height="25dip"
+	           android:gravity="center"   android:background="@drawable/itembg1">
+	            <TextView android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	             android:text="@string/hh" android:textColor="#000000" android:tag="负平"/>
+	             <TextView android:id="@+id/text11" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	             android:text="@string/up" android:textColor="#000000" android:tag="负平1"/>
+	       </LinearLayout>
+	       <LinearLayout android:orientation="horizontal" android:layout_width="71dip" android:layout_height="25dip"
+	           android:gravity="center"   android:background="@drawable/itembg1">
+	            <TextView android:id="@+id/text2" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	            android:text="@string/hh" android:textColor="#000000" android:tag="负负"/>
+	             <TextView android:id="@+id/text21" android:layout_width="wrap_content" android:layout_height="25dip" android:gravity="center"
+	            android:text="@string/up" android:textColor="#000000" android:tag="负负1"/>
+	       </LinearLayout>
+	      
+	    </LinearLayout>
+	        
+	</LinearLayout>
+</LinearLayout>

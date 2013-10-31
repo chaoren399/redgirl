@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="65dp"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/num"
+                style="@style/Style1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="2"
+                android:text="周四001" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/a_cn"
+                    style="@style/itemTeamNameStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="奥兰多" />
+
+                <TextView
+                    android:id="@+id/handicapText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#ff0000" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/l_cn"
+                style="@style/itemTeamNameStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="美职篮" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/h_cn"
+                style="@style/itemTeamNameStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="勇士" />
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/itemTimeStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/s1"
+                style="@style/itemTimeStyle1"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/s2"
+                style="@style/itemTimeStyle1"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/s3"
+                style="@style/itemTimeStyle1"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/s4"
+                style="@style/itemTimeStyle1"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/finaled"
+                style="@style/itemTimeStyle1"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/itemTimeStyle1"
+                android:layout_width="55dp"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

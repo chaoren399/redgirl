@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/table"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/itembg">
+		<TableRow>
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/liansaimingcheng"
+				android:singleLine="true" />
+			<TextView android:layout_width="85dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/kedui"
+				android:singleLine="true" />
+			<TextView android:layout_width="85dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/zhudui"
+				android:singleLine="true" />
+			<TextView android:layout_width="70dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/sg"
+				android:singleLine="true" />
+		</TableRow>
+		<TableRow>
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/saishiriqi"
+				android:singleLine="true" />
+			<TextView android:layout_width="85dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/kddf"
+				android:singleLine="true" />
+			<TextView android:layout_width="85dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/zddf"
+				android:singleLine="true" />
+			<TextView android:layout_width="70dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/wf_dxf"
+				android:singleLine="true" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

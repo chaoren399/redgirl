@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TableLayout android:id="@+id/table" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TableRow android:background="@drawable/itembg">
+			<TextView android:layout_width="40dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/paiming"
+				android:singleLine="true" />
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/qiudui"
+				android:singleLine="true" />
+			<TextView android:layout_width="50dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/sai"
+				android:singleLine="true" android:visibility="gone" />
+			<TextView android:layout_width="40dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/win"
+				android:singleLine="true" />
+			<TextView android:layout_width="40dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/draw"
+				android:singleLine="true" />
+			<TextView android:layout_width="40dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/lose"
+				android:singleLine="true" />
+			<TextView android:layout_width="50dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/goal"
+				android:singleLine="true" android:visibility="gone" />
+			<TextView android:layout_width="50dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/losegoal"
+				android:singleLine="true" android:visibility="gone" />
+			<TextView android:layout_width="40dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/net"
+				android:singleLine="true" />
+			<TextView android:layout_width="40dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/score"
+				android:singleLine="true" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

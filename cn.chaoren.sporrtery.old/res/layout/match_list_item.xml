@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="100.0" >
+
+    <include layout="@layout/match_list_item_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:background="@drawable/veins_bg_wrap"
+        android:orientation="horizontal"
+        android:weightSum="100.0" >
+
+        <RelativeLayout
+            android:id="@+id/aaa"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="24.0"
+            android:background="#00000000" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/league_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:shadowColor="#a0ffffff"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:textColor="#ff686868"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/stop_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="2.0dip"
+                    android:shadowColor="#a0ffffff"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:textColor="#ffb2a192"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="76.0"
+            android:background="@drawable/list_normal"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/bbb"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="40.0"
+                android:background="#00000000" >
+
+                <include
+                    android:id="@+id/home_block"
+                    layout="@layout/match_list_item_block" />
+
+                <ImageView
+                    android:layout_width="1.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="2.0dip"
+                    android:paddingTop="2.0dip"
+                    android:src="@drawable/cp_shape_white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ccc"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="24.0"
+                android:background="#00000000" >
+
+                <include
+                    android:id="@+id/vs_block"
+                    layout="@layout/match_list_item_block" />
+
+                <ImageView
+                    android:layout_width="1.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="2.0dip"
+                    android:paddingTop="2.0dip"
+                    android:src="@drawable/cp_match_item_divider_gray" />
+
+                <ImageView
+                    android:layout_width="1.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="2.0dip"
+                    android:paddingTop="2.0dip"
+                    android:src="@drawable/cp_shape_white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ddd"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="36.0"
+                android:background="#00000000" >
+
+                <include
+                    android:id="@+id/guest_block"
+                    layout="@layout/match_list_item_block" />
+
+                <ImageView
+                    android:layout_width="1.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="2.0dip"
+                    android:paddingTop="2.0dip"
+                    android:src="@drawable/cp_match_item_divider_gray" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="4.0px"
+        android:background="@drawable/cp_match_item_bottom"
+        android:orientation="horizontal" />
+   
+
+</LinearLayout>

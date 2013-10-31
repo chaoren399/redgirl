@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TableRow android:background="@drawable/itembg1" >
+
+        <TextView
+            android:id="@+id/index"
+            style="@style/Style6"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/cn"
+            style="@style/Style6"
+            android:layout_width="85dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/count"
+            style="@style/Style6"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/win"
+            style="@style/Style6"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/draw"
+            style="@style/Style6"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/lose"
+            style="@style/Style6"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/goal"
+            style="@style/Style6"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/losegoal"
+            style="@style/Style6"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/net"
+            style="@style/Style6"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/score"
+            style="@style/Style6"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:singleLine="true" />
+    </TableRow>
+
+</TableLayout>

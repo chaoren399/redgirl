@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.chaoren.view.ProgressLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progress_small"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:indeterminateDrawable="@drawable/progress_drawable"
+                android:visibility="visible" />
+     <!-- 请稍候... -->
+            <TextView
+                android:id="@+id/loadingtext"
+                style="@style/Style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/progress_qsh" />
+        </LinearLayout>
+
+        <!-- 获取数据失败，请检查你的网络！ -->
+        <TextView
+            android:id="@+id/reloadtext"
+            style="@style/Style3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/progress_hqsjsb"
+            android:visibility="gone" />
+
+        <!-- 重试 -->
+        <Button
+            android:id="@+id/reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_selector"
+            android:text="@string/progress_cxjz"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</cn.chaoren.view.ProgressLinearLayout>

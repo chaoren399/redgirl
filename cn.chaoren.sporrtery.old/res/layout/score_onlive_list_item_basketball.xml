@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!-- 比分直播篮球item界面 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:echanger="http://schemas.android.com/apk/res/cn.chaoren"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e6e6e6"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="84dip"
+        android:paddingBottom="13dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="13dip" >
+
+        <LinearLayout
+            android:id="@+id/left"
+            android:layout_width="101dip"
+            android:layout_height="84dip"
+            android:orientation="horizontal" >
+
+            <cn.chaoren.widget.ToggleView
+                android:id="@+id/mToggleView"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical"
+                echanger:offsrc="@drawable/icon09"
+                echanger:on="false"
+                echanger:onsrc="@drawable/icon10" />
+
+            <TextView
+                android:id="@+id/sessions"
+                android:layout_width="75dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:gravity="center_vertical"
+                android:text="周四001"
+                android:textColor="#333333"
+                android:textSize="14dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/homeNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="老虎竞技"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/aWayNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="可而多瓦"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/playingResult"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/vectory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="胜:2.45"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/tie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="3dip"
+                    android:text="平:2.00"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/lose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="3dip"
+                    android:text="负:0.75"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/award"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="3dip"
+                    android:text="奖金:4545"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/overResult"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="0:0"
+                    android:textColor="#333333"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:text="0:0"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:text="0:0"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/forth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:text="0:0"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:text="0:0"
+                    android:textColor="#333333" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/league"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="阿甲"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="2012-12-05"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/remainTime"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="48&apos;"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/saiguokaijiang_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+     <!-- 选择 篮球还是足球-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabbg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/zuqiu_tab"
+                style="@style/Style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_l_select"
+                android:gravity="center"
+                android:text="@string/str_zuqiu" 
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/lanqiu_tab"
+                style="@style/Style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_l_normal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/str_lanqiu" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zuqiu_match_result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+           <!-- 选择周几的体育赛事 -->
+        <LinearLayout
+            android:id="@+id/zuqiu_match_result_sel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_titlebg"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/zuqiu_time_layout"
+                android:layout_width="130dp"
+                android:layout_height="fill_parent" >
+  
+                <TextView
+                    android:id="@+id/zuqiu_match_result_time_text"
+                    style="@style/Style3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/arrow_select" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zuqiu_liansai_layout"
+                android:layout_width="130dp"
+                android:layout_height="fill_parent" >
+
+                <!-- 所有赛制 -->
+                <TextView
+                    android:id="@+id/zuqiu_match_liansai_text"
+                    style="@style/Style3"
+                    android:layout_width="160dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/djxzls" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/arrow_select" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/zuqiu_match_liansai_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+           
+        </LinearLayout>
+
+        <!-- 一个进度对话条 -->
+        
+        <include
+            android:id="@+id/zuqiu_result_progress"
+            layout="@layout/progress_small" />
+
+        <!-- 足球查询结果的listview -->
+        
+        <ListView
+            android:id="@+id/zuqiu_match_result_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#ffffff"
+            android:divider="#00000000"
+            android:dividerHeight="0px"
+            android:scrollingCache="false"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lanqiu_match_result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!-- <include android:id="@+id/lanqiu_leagues_progress" layout="@layout/progress_small" /> -->
+
+        <LinearLayout
+            android:id="@+id/lanqiu_match_result_sel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_titlebg"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/lanqiu_time_layout"
+                android:layout_width="130dp"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/lanqiu_match_result_time_text"
+                    style="@style/Style3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/arrow_select" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lanqiu_liansai_layout"
+                android:layout_width="130dp"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/lanqiu_match_liansai_text"
+                    style="@style/Style3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/djxzls" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/arrow_select" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lanqiu_match_liansai_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+            <!--
+                 <Button android:id="@+id/lanqiu_math_result_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical" android:gravity="center"
+				android:text="@string/queding" style="@style/itemTeamNameStyle"
+				android:background="@drawable/btn_selector" />
+            -->
+        </LinearLayout>
+
+        <include
+            android:id="@+id/lanqiu_result_progress"
+            layout="@layout/progress_small" />
+
+        <ListView
+            android:id="@+id/lanqiu_match_result_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#ffffff"
+            android:divider="#00000000"
+            android:dividerHeight="0px"
+            android:scrollingCache="false"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

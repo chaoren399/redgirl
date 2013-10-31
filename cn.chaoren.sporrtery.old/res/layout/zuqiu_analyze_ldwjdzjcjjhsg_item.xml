@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:background="@drawable/itembg1">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<TextView android:layout_width="70dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/l_cn"
+			android:singleLine="true" />
+		<TextView android:layout_width="70dp" android:layout_height="25dp"
+			style="@style/Style7" android:gravity="center" android:id="@+id/h_cn"
+			android:singleLine="true" />
+		<TextView android:layout_width="60dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/goalline"
+			android:singleLine="true" />
+		<TextView android:layout_width="60dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/hafu"
+			android:singleLine="true" />
+		<TextView android:layout_width="60dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/h"
+			android:singleLine="true" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<TextView android:layout_width="70dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/date"
+			android:singleLine="true" />
+		<TextView android:layout_width="70dp" android:layout_height="25dp"
+			style="@style/Style7" android:gravity="center" android:id="@+id/a_cn"
+			android:singleLine="true" />
+		<TextView android:layout_width="60dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/half"
+			android:singleLine="true" />
+		<TextView android:layout_width="60dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/hhad"
+			android:singleLine="true" />
+		<TextView android:layout_width="60dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/d"
+			android:singleLine="true" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<TextView android:layout_width="70dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:singleLine="true" />
+		<TextView android:layout_width="70dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/crs"
+			android:singleLine="true" />
+		<TextView android:layout_width="60dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/final1"
+			android:singleLine="true" />
+		<TextView android:layout_width="60dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/ttg"
+			android:singleLine="true" />
+		<TextView android:layout_width="60dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/a"
+			android:singleLine="true" />
+	</LinearLayout>
+</LinearLayout>

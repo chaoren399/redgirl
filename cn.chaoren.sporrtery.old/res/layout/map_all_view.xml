@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autonavi="http://schemas.android.com/apk/res/com.amap"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#FF8C00" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/txt_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="您周围有X家店"
+                android:textColor="@color/gray2"
+                android:textSize="18dip" />
+             <ImageView 
+                android:id="@+id/btnBack"
+                android:layout_width= "35dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/back_normal" />
+            
+
+            <ImageView
+                android:id="@+id/image_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/txt_num"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/map" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filter_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="#FFDEAD"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/filter_distance"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg_map_filter" >
+
+            <TextView
+                android:id="@+id/distance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="0.5千米"
+                android:textColor="@color/gray2" />
+           
+            <ImageView
+                android:id="@+id/distance_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/distance_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/filter_icon" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="1dp"
+            android:background="#d7d7d7" />
+
+        <RelativeLayout
+            android:id="@+id/filter_district"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg_map_filter" >
+
+            <TextView
+                android:id="@+id/district_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="竞彩店"
+                android:textColor="@color/gray2" />
+
+            <ImageView
+                android:id="@+id/district_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/district_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/filter_icon" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="1dp"
+            android:background="#d7d7d7" />
+
+        <RelativeLayout
+            android:id="@+id/privnce_type"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg_map_filter" >
+
+            <TextView
+                android:id="@+id/privnce_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="省市选择"
+                android:textColor="@color/gray2" />
+
+            <ImageView
+                android:id="@+id/privnce_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/privnce_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/filter_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/map_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/my_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/map_horizontalScrollView"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dip"
+                android:layout_marginRight="12dip"
+                android:background="@drawable/loc_a" />
+
+            <Button
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_refresh"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <com.amap.mapapi.map.MapView
+                android:id="@+id/mapallview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/map_horizontalScrollView"
+                android:clickable="true"
+                android:persistentDrawingCache="all" />
+		 <!-- <ImageView
+                android:id="@+id/btnLocate"
+               android:layout_alignRight="@id/mapallview"
+               android:layout_alignBottom="@id/mapallview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loc_a"
+                
+                />  -->
+			 <ImageView
+                android:id="@+id/btnLocate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/mapallview"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dip"
+                android:layout_marginRight="12dip"
+                android:background="@drawable/loc_a" /> 
+       </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/saiguokaijiang_layout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/tabbg"
+		android:orientation="horizontal">
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:layout_gravity="bottom">
+			<TextView android:id="@+id/single_tab" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" style="@style/Style3"
+				 android:background="@drawable/tab_l_select" android:text="@string/single_award"
+				android:layout_centerHorizontal="true" android:gravity="center" />
+		</RelativeLayout>
+		<!-- android:text="@string/str_zuqiu" -->
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:layout_gravity="bottom">
+			<TextView android:id="@+id/result_tab" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				style="@style/Style3" android:singleLine="true" android:background="@drawable/tab_l_normal"
+				android:layout_centerHorizontal="true" android:gravity="center" 
+				android:text="@string/result_award"/>
+			<!-- android:text="@string/str_lanqiu" -->
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/zuqiu_match_result_layout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<include android:id="@+id/zuqiu_leagues_progress" layout="@layout/progress_small" />
+		<LinearLayout android:id="@+id/zuqiu_match_result_sel"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/top_titlebg" android:orientation="horizontal"
+			android:visibility="gone">
+			<LinearLayout android:id="@+id/match_type_layout" android:clickable="true"
+				android:layout_width="80dp" android:layout_height="fill_parent">
+				<TextView android:id="@+id/match_type_text" android:text="@string/str_zuqiu"
+					android:layout_width="wrap_content" android:layout_weight="1"
+					android:layout_height="fill_parent" android:singleLine="true"
+					style="@style/Style3" android:gravity="center_vertical|right" />
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+					android:src="@drawable/arrow_select" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/zuqiu_time_layout"
+				android:layout_width="120dp" android:layout_height="fill_parent">
+				<TextView android:id="@+id/zuqiu_match_result_time_text"
+					android:layout_width="wrap_content" android:layout_weight="1"
+					android:layout_height="fill_parent" android:singleLine="true"
+					style="@style/Style3" android:gravity="center_vertical|right" />
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+					android:src="@drawable/arrow_select" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/zuqiu_liansai_layout"
+				android:layout_width="120dp" android:layout_height="fill_parent">
+				<TextView android:id="@+id/zuqiu_match_liansai_text"
+					android:layout_width="wrap_content" android:layout_weight="1"
+					android:layout_height="fill_parent" style="@style/Style3"
+					android:text="@string/djxzls" android:gravity="center_vertical|right" />
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+					android:src="@drawable/arrow_select" />
+			</LinearLayout>
+			<TextView android:id="@+id/zuqiu_match_liansai_id_text"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:visibility="gone" />
+			<!-- <Button android:id="@+id/zuqiu_math_result_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical" android:gravity="center"
+				android:text="@string/queding" style="@style/itemTeamNameStyle"
+				android:background="@drawable/btn_selector" /> -->
+		</LinearLayout>
+		<include android:id="@+id/zuqiu_result_progress" layout="@layout/progress_small" />
+		<ListView android:id="@+id/zuqiu_match_result_list"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:dividerHeight="0px" android:divider="#00000000"
+			android:scrollingCache="false" android:cacheColorHint="#ffffff"
+			android:visibility="gone">
+		</ListView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/lanqiu_match_result_layout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:visibility="gone">
+		<include android:id="@+id/lanqiu_leagues_progress" layout="@layout/progress_small" />
+		<LinearLayout android:id="@+id/lanqiu_match_result_sel"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/top_titlebg" android:orientation="horizontal"
+			android:visibility="gone">
+			<LinearLayout android:id="@+id/b_match_type_layout" android:clickable="true"
+				android:layout_width="80dp" android:layout_height="fill_parent">
+				<TextView android:id="@+id/b_match_type_text" android:text="@string/str_zuqiu"
+					android:layout_width="wrap_content" android:layout_weight="1"
+					android:layout_height="fill_parent" android:singleLine="true"
+					style="@style/Style3" android:gravity="center_vertical|right" />
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+					android:src="@drawable/arrow_select" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/lanqiu_time_layout"
+				android:layout_width="120dp" android:layout_height="fill_parent">
+				<TextView android:id="@+id/lanqiu_match_result_time_text"
+					android:layout_width="wrap_content" android:layout_weight="1"
+					android:layout_height="fill_parent" android:layout_gravity="center_vertical"
+					android:singleLine="true" style="@style/Style3" android:gravity="center_vertical|right" />
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+					android:src="@drawable/arrow_select" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/lanqiu_liansai_layout"
+				android:layout_width="120dp" android:layout_height="fill_parent">
+				<TextView android:id="@+id/lanqiu_match_liansai_text"
+					android:layout_width="wrap_content" android:layout_weight="1"
+					android:layout_height="fill_parent" style="@style/Style3"
+					android:layout_gravity="center_vertical" android:text="@string/djxznba"
+					android:gravity="center_vertical|right" />
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+					android:src="@drawable/arrow_select" />
+			</LinearLayout>
+			<TextView android:id="@+id/lanqiu_match_liansai_id_text"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:visibility="gone" />
+			<!-- <Button android:id="@+id/lanqiu_math_result_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical" android:gravity="center"
+				android:text="@string/queding" style="@style/itemTeamNameStyle"
+				android:background="@drawable/btn_selector" /> -->
+		</LinearLayout>
+		<include android:id="@+id/lanqiu_result_progress" layout="@layout/progress_small" />
+		<ListView android:id="@+id/lanqiu_match_result_list"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:dividerHeight="0px" android:divider="#00000000"
+			android:scrollingCache="false" android:cacheColorHint="#ffffff"
+			android:visibility="gone">
+		</ListView>
+	</LinearLayout>
+</LinearLayout>

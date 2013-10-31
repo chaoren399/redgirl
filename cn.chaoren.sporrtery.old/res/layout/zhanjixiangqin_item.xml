@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="0dip"
+    android:background="@drawable/cp_selected_ball"
+    android:paddingTop="0dip" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dip"
+        android:orientation="horizontal"
+        android:paddingTop="0dip" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/day1"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dip"
+                android:gravity="center_horizontal"
+                android:text="时间"
+                android:textColor="#000000"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/day2"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/day1"
+                android:layout_marginLeft="0dip"
+                android:gravity="center_horizontal"
+                android:text="时间"
+                android:textColor="#000000"
+                android:textSize="14dip" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:background="#FF909090" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/zhanji_zhudui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dip"
+                android:gravity="center_horizontal"
+                android:text="主队"
+                android:textColor="#000000"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tv_vs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zhanji_zhudui"
+                android:layout_marginLeft="60dip"
+                android:background="#FFEBCD"
+                android:text="VS"
+                android:textColor="#000000"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/zhanji_kedui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_vs"
+                android:layout_marginLeft="60dip"
+                android:text="客队"
+                android:textColor="#000000"
+                android:textSize="14dip" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="155dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:id="@+id/touzhu"
+            android:layout_width="35dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dip"
+            android:layout_marginTop="17dip"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="198dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:id="@+id/caiguo"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="195dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center_horizontal"
+            android:textColor="#ffff0000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="245dip"
+            android:background="#FF909090" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/zhanji_sheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dip"
+                android:gravity="center_horizontal"
+                android:text="胜1"
+                android:textColor="#000000"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/zhanji_ping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zhanji_sheng"
+                android:layout_marginLeft="250dip"
+                android:background="#FFEBCD"
+                android:text="胜2"
+                android:textColor="#000000"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/zhanji_fu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zhanji_ping"
+                android:layout_marginLeft="250dip"
+                android:text="胜3"
+                android:textColor="#000000"
+                android:textSize="14dip" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#FF909090" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#FF909090" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="#FF909090" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#FF909090" />
+    </RelativeLayout>
+
+</RelativeLayout>

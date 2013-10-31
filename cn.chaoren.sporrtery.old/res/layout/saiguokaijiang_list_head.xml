@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+	android:layout_height="40dip" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal">
+	<TextView android:layout_width="100dip" android:layout_height="fill_parent"
+		android:text="@string/saishiriqi" style="@style/itemTeamNameStyle"
+		android:singleLine="true" android:gravity="center" android:background="@drawable/itembg" />
+	<TextView android:layout_width="100dip" android:layout_height="fill_parent"
+		android:text="@string/saishibianhao" style="@style/itemTeamNameStyle"
+		android:background="@drawable/itembg" android:singleLine="true"
+		android:gravity="center" />
+	<TextView android:layout_width="150dip" android:layout_height="fill_parent"
+		android:text="@string/liansaimingcheng" style="@style/itemTeamNameStyle"
+		android:background="@drawable/itembg" android:singleLine="true"
+		android:gravity="center" />
+	<TextView android:layout_width="100dip" android:layout_height="fill_parent"
+		android:text="@string/zhudui" android:background="@drawable/itembg"
+		style="@style/itemTeamNameStyle" android:singleLine="true"
+		android:gravity="center" />
+	<TextView android:layout_width="100dip" android:layout_height="fill_parent"
+		android:text="@string/kedui" android:background="@drawable/itembg"
+		android:singleLine="true" style="@style/itemTeamNameStyle"
+		android:gravity="center" />
+</LinearLayout>

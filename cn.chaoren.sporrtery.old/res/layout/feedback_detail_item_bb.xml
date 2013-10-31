@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/itembg1"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="56dip"
+        android:layout_height="150dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:textSize="13dip"
+            android:background="@drawable/itembg1"
+            android:gravity="center"
+            android:tag="date"
+            android:text="2012-01-11"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rewardLayout"
+        android:layout_width="264dip"
+        android:layout_height="150dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/line0"
+            android:layout_width="fill_parent"
+            android:layout_height="25dip"
+            android:background="@drawable/itembg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg"
+                android:gravity="center"
+                android:text="@string/zhudui"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg"
+                android:gravity="center"
+                android:text="@string/kedui"
+                android:textColor="#000000" />
+			
+            
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg"
+                android:gravity="center"
+                android:text="@string/quanchang"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg"
+                android:gravity="center"
+                android:text="@string/wf_sf"
+                android:textColor="#000000" />
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/value_line0"
+            android:layout_width="fill_parent"
+            android:layout_height="25dip"
+            android:background="@drawable/itembg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:tag="zhudui"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:tag="kedui"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:tag="quanchang"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:tag="shengfu"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="25dip"
+            android:background="@drawable/itembg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg"
+                android:gravity="center"
+                android:text="@string/dyj"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg"
+                android:gravity="center"
+                android:text="@string/dej"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg"
+                android:gravity="center"
+                android:textSize="13dip"
+                android:text="@string/dsj"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:textSize="13dip"
+                android:background="@drawable/itembg"
+                android:gravity="center"
+                android:text="@string/dsij"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/value_line1"
+            android:layout_width="fill_parent"
+            android:layout_height="25dip"
+            android:background="@drawable/itembg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:tag="dyj"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:tag="dej"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:tag="dsj"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:tag="dsij"
+                android:textColor="#000000" />
+        </LinearLayout>
+        
+            
+            
+        
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="fill_parent"
+            android:layout_height="25dip"
+            android:background="@drawable/itembg1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg"
+                android:gravity="center"
+                android:text="@string/wf_rfsf"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg"
+                android:gravity="center"
+                android:text="@string/wf_sfc"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg"
+                android:textSize="13dip"
+                android:gravity="center"
+                android:text="@string/wf_dxf"
+                android:textColor="#000000" />
+
+            <TextView android:visibility="gone"
+                android:id="@+id/text3"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg"
+                android:gravity="center"
+                android:text="@string/detail"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/value_line2"
+            android:layout_width="fill_parent"
+            android:layout_height="25dip"
+            android:background="@drawable/itembg1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:tag="rangfenzhufu"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:tag="shengfencha"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:tag="daxiaofen"
+                android:textColor="#000000" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/text3"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:background="@drawable/itembg1"
+                android:gravity="center"
+                android:text="@string/detail_short"
+                android:clickable="true"
+                android:tag="xiangxi"
+                android:textColor="#0099FF" />
+        </LinearLayout>    
+    </LinearLayout>
+
+</LinearLayout>

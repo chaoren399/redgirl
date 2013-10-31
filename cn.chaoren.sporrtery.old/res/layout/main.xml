@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/allbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/title_shouzhu"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_selector"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bot_menu_01" />
+
+            <TextView
+                style="@style/titleNameStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/str_shouzhu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_saiguokaijiang"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_selector"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bot_menu_02" />
+
+            <TextView
+                style="@style/titleNameStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/str_saiguokaijiang" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_score_onlive"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_selector"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bot_menu_03" />
+
+            <TextView
+                style="@style/titleNameStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                 android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/str_score" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_wodeguanzhu"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_selector"
+            android:clickable="true"
+            android:orientation="vertical" >
+  
+            <View
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bot_menu_04" />
+
+            <TextView
+                style="@style/titleNameStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/str_wodeguanzhu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/str_gengduo"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_selector"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bot_menu_05" />
+
+            <TextView
+                style="@style/titleNameStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/str_gengduo" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

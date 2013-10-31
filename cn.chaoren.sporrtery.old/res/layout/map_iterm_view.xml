@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autonavi="http://schemas.android.com/apk/res/com.amap"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#FF8C00" >
+
+        <TextView
+            android:id="@+id/txtNumLottery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="店编号 - 店名称"
+            android:textColor="@color/gray2"
+            android:textSize="18dip" />
+    </RelativeLayout>
+  
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+      
+        <com.amap.mapapi.map.MapView
+            android:id="@+id/mapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+         <ImageView
+                android:id="@+id/btnItemLocate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/mapView"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dip"
+                android:layout_marginRight="12dip"
+                android:background="@drawable/loc_a" /> 
+   
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#FF8C00" >
+      
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="电话  -经营 -\r\n  地址"
+                android:textColor="@color/gray2"
+                android:textSize="18dip" />
+        </RelativeLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

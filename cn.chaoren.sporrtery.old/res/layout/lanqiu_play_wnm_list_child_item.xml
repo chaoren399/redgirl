@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TableRow android:background="@drawable/itembg">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style1"
+				android:gravity="center" android:text="@string/fc" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style1"
+				android:gravity="center" android:text="@string/w1" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style1"
+				android:gravity="center" android:text="@string/w2" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style1"
+				android:gravity="center" android:text="@string/w3" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style1"
+				android:gravity="center" android:text="@string/w4" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style1"
+				android:gravity="center" android:text="@string/w5" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style1"
+				android:gravity="center" android:text="@string/w6" />
+		</TableRow>
+		<TableRow android:background="@drawable/itembg1">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" android:text="@string/ks" />
+			<TextView android:id="@+id/w1" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+			<TextView android:id="@+id/w2" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+			<TextView android:id="@+id/w3" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+			<TextView android:id="@+id/w4" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+			<TextView android:id="@+id/w5" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+			<TextView android:id="@+id/w6" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+		</TableRow>
+		<TableRow android:background="@drawable/itembg1">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" android:text="@string/zs" />
+			<TextView android:id="@+id/wa1" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+			<TextView android:id="@+id/wa2" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+			<TextView android:id="@+id/wa3" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+			<TextView android:id="@+id/wa4" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+			<TextView android:id="@+id/wa5" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+			<TextView android:id="@+id/wa6" android:layout_width="wrap_content"
+				android:layout_height="25dp" android:layout_weight="1" style="@style/Style4"
+				android:gravity="center" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

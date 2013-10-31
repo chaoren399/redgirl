@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/saiguokaijiang_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+   
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabbg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/zuqiu_tab"
+                style="@style/Style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_l_select"
+                android:gravity="center"
+                android:text="@string/str_zuqiu" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_weight="1" >
+  
+            <TextView
+                android:id="@+id/lanqiu_tab"
+                style="@style/Style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_l_normal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/str_lanqiu" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/zuqiu_layout"
+        layout="@layout/zuqiu_match" />
+
+    <include
+        android:id="@+id/lanqiu_layout"
+        layout="@layout/lanqiu_match" />
+
+</LinearLayout>

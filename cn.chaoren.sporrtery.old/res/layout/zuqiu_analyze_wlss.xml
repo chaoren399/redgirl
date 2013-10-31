@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TableLayout android:id="@+id/table" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TableRow android:background="@drawable/itembg">
+			<TextView android:layout_width="90dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/liansaimingcheng"
+				android:singleLine="true" />
+			<TextView android:layout_width="70dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/saishiriqi"
+				android:singleLine="true" />
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/zhudui"
+				android:singleLine="true" />
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style6" android:gravity="center" android:text="@string/kedui"
+				android:singleLine="true" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

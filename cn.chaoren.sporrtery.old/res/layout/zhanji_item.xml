@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dip"
+    android:background="@drawable/cp_selected_ball_bg"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/wanfa"
+        style="@style/itemTimeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_marginLeft="12dip"
+        android:gravity="center_vertical"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/fashi"
+        style="@style/itemTimeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_marginLeft="75dip"
+        android:gravity="center_vertical"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/zhushu"
+        style="@style/itemTimeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_marginLeft="138dip"
+        android:gravity="center_vertical"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/zhongjiang"
+        style="@style/itemTimeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_marginLeft="205dip"
+        android:gravity="center_vertical"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/zhuangtai"
+        style="@style/itemTimeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_marginLeft="262dip"
+        android:gravity="center_vertical"
+        android:singleLine="true" />
+
+</RelativeLayout>

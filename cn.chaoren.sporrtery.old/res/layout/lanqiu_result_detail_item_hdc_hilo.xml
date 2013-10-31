@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="fill_parent"
+	android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:id="@+id/title" android:layout_width="fill_parent"
+		android:layout_height="25dp" style="@style/Style1"
+		android:gravity="center" android:background="@drawable/itembg" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="25dp" style="@style/Style6"
+		android:gravity="center" android:background="@drawable/itembg1"
+		android:text="@string/dcfdjj" />
+	<TableRow>
+		<TextView android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="25dp" style="@style/Style7"
+			android:gravity="center" android:text="@string/kjjg"
+			android:background="@drawable/itembg1" android:singleLine="true" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="25dp" style="@style/Style7"
+			android:gravity="center" android:text="@string/dzjj"
+			android:background="@drawable/itembg1" android:singleLine="true" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="25dp" style="@style/Style7"
+			android:gravity="center" android:text="@string/ztzje"
+			android:background="@drawable/itembg1" android:singleLine="true" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="25dp" style="@style/Style7"
+			android:gravity="center" android:text="@string/zjzs"
+			android:background="@drawable/itembg1" android:singleLine="true" />
+	</TableRow>
+	<TableRow>
+		<TextView android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="25dp" style="@style/Style6"
+			android:gravity="center" android:id="@+id/c" android:background="@drawable/itembg1"
+			android:singleLine="true" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="25dp" style="@style/Style6"
+			android:gravity="center" android:id="@+id/value" android:background="@drawable/itembg1"
+			android:singleLine="true" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="25dp" style="@style/Style6"
+			android:gravity="center" android:id="@+id/m" android:background="@drawable/itembg1"
+			android:singleLine="true" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="25dp" style="@style/Style6"
+			android:gravity="center" android:id="@+id/count" android:background="@drawable/itembg1"
+			android:singleLine="true" />
+	</TableRow>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="25dp" style="@style/Style6"
+		android:gravity="center" android:text="@string/gggdjj_kjjg"
+		android:background="@drawable/itembg1" android:singleLine="true" />
+	<TableRow android:id="@+id/row_title">
+	</TableRow>
+	<TableRow android:id="@+id/row_value">
+	</TableRow>
+</TableLayout>

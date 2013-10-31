@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/allbg">
+	<LinearLayout android:id="@+id/title" android:orientation="horizontal"
+	    android:layout_width="fill_parent" android:layout_height="37dip"
+	    android:background="@drawable/titlebg"
+	    >
+	    <TextView android:text="@string/information" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+	        android:layout_gravity="center" android:textSize="17dip" android:gravity="center" android:textColor="#000000"
+	        />
+	    
+	</LinearLayout>
+	<ListView android:id="@+id/infoList" android:layout_width="fill_parent" android:layout_height="wrap_content"
+	    android:footerDividersEnabled="true" android:divider="#bdbdbd"
+	    android:dividerHeight="1dip" android:cacheColorHint="#ffffff"
+	    ></ListView>
+</LinearLayout>

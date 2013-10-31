@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cp_message_bg" >
+
+    <LinearLayout
+        android:id="@+id/layout_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/tabbg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/zuqiu_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dip"
+            android:text="@string/zhanjixianqi"
+            android:textColor="#ffffff"
+            android:textSize="20dip" />
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/layoutt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_below="@id/layout_tab"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cp_selected_ball_bg"
+            android:text="详情"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_marginTop="15dip"
+            android:background="#FF909090" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutt1"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="5dip"
+        android:text="发布时间："
+        android:textColor="#000000"
+        android:textSize="15dip" />
+    <TextView
+       android:layout_below="@id/tv_time"
+        android:id="@+id/tv_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="5dip"
+        android:text="预测中奖金额："
+        android:textColor="#000000"
+        android:textSize="15dip" 
+        
+       />
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_below="@id/tv_fee"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:layout_marginTop="17dip"
+        android:background="#FFDEAD"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="注数"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal"
+            android:text="投注金额"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="过关方式"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="198dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="196dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="倍投数"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="245dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal"
+            android:text="中奖金额"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#FF909090" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="#FF909090" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#FF909090" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5px"
+            android:layout_alignParentBottom="true"
+            android:background="#FF909090" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_below="@id/r1"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:paddingTop="0sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/zhushu"
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:id="@+id/touzhu"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:id="@+id/fangshi"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="198dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:id="@+id/beishu"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="195dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="245dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:id="@+id/zhongjiang"
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#FF909090" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5px"
+            android:layout_alignParentTop="true"
+            android:background="#FF909090" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#FF909090" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#FF909090" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r2"
+        android:layout_marginTop="15sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cp_selected_ball_bg"
+            android:maxLines="1"
+            android:text="选择详情"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_marginTop="15dip"
+            android:background="#FF909090" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_below="@id/layoutt2"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:layout_marginTop="14dip"
+        android:background="#FFDEAD"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="编号"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal"
+            android:text="主队与客队"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="155dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:layout_width="35dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal"
+            android:text="投注"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="198dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="195dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal"
+            android:text="彩果"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="245dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal"
+            android:text="赔率"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="#FF909090" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#FF909090" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#FF909090" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5px"
+            android:layout_alignParentBottom="true"
+            android:background="#FF909090" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_zhanji"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rr1"
+        android:layout_marginTop="0dip"
+        android:paddingTop="0dip"
+        android:fadingEdge="none"
+        android:scrollingCache="false" >
+    </ListView>
+
+</RelativeLayout>

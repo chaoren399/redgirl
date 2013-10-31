@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:orientation="horizontal"
+	android:background="@drawable/item1bg">
+<LinearLayout
+      android:clickable="true"
+    android:onClick="feedBackOnClick"
+        android:id="@+id/europe_company_select"
+        android:layout_width="75dp"
+        android:layout_height="75dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/e_companyText"
+            style="@style/Style6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/company" />
+
+        <View
+           
+           
+          
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:background="@drawable/icon07"
+            
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="41dp"
+        android:layout_height="75dip"
+        android:orientation="vertical" >
+
+         <TextView
+	            style="@style/Style6"
+	            android:layout_width="50dp"
+	            android:layout_height="25dip"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/h1" />
+        
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="50dp"
+	            android:layout_height="25dip"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/d1" />
+
+         <TextView
+	            style="@style/Style6"
+	            android:layout_width="50dp"
+	            android:layout_height="25dip"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/a1" />
+
+    </LinearLayout>
+<!-- 3bbb -->
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="75dip"
+        android:orientation="vertical" >
+
+        <TextView
+	            style="@style/Style6"
+	            android:layout_width="60dp"
+	            android:layout_height="25dip"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_wa" />
+
+      <TextView
+	            style="@style/Style6"
+	            android:layout_width="60dp"
+	            android:layout_height="25dip"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_da" />
+
+        <TextView
+	            style="@style/Style6"
+	            android:layout_width="60dp"
+	            android:layout_height="25dip"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_aa" />
+    </LinearLayout>
+<!-- four -->
+    <LinearLayout
+        android:layout_width="81dp"
+        android:layout_height="75dip"
+        android:orientation="vertical" >
+
+         <TextView
+	            style="@style/Style6"
+	            android:layout_width="70dp"
+	            android:layout_height="25dip"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_kw" />
+
+        <TextView
+	            style="@style/Style6"
+	            android:layout_width="70dp"
+	            android:layout_height="25dip"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_kd" />
+
+        <TextView
+	            style="@style/Style6"
+	            android:layout_width="70dp"
+	            android:layout_height="25dip"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_ka" />
+    </LinearLayout>
+     <!-- end -->
+        <LinearLayout
+        
+        android:layout_width="64dp"
+        android:layout_height="75dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+	            style="@style/Style6"
+	            android:layout_width="60dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_rr" />
+
+     <!--    <View
+            android:id="@+id/asia_company_select"
+           android:onClick="feedBackOnClick"
+            android:clickable="true"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:background="@drawable/icon07"
+            
+            /> -->
+    </LinearLayout>
+<!-- end here -->    
+	<!-- <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/company" />
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/h1" />
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="60dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_wa" />
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="70dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_kw" />
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="60dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_rr" />
+	    </LinearLayout>
+2
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true" />
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/d1" />
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="60dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_da" />
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="70dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_kd" />
+	    </LinearLayout>
+3
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true" />
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/a1" />
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="60dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_aa" />
+
+	        <TextView
+	            style="@style/Style6"
+	            android:layout_width="70dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/europe_ka" />
+	    </LinearLayout>
+	</LinearLayout> -->
+
+</LinearLayout>

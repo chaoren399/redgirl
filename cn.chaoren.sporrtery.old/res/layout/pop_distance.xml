@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/radiogroup_distance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/filter_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/wubai_km"
+            style="@style/radioButton_pop_distance"
+            android:checked="true"
+            android:text="0.5千米" />
+
+        <RadioButton
+            android:id="@+id/one_km"
+            style="@style/radioButton_pop_distance"
+            android:text="1千米" />
+
+        <RadioButton
+            android:id="@+id/two_km"
+            style="@style/radioButton_pop_distance"
+            android:text="2千米" />
+
+        <RadioButton
+            android:id="@+id/three_km"
+            style="@style/radioButton_pop_distance"
+            android:text="3千米" />
+
+        <RadioButton
+            android:id="@+id/five_km"
+            style="@style/radioButton_pop_distance"
+            android:text="5千米" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TableRow android:background="@drawable/itembg">
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style1" android:gravity="center" android:text="@string/hh" />
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style1" android:gravity="center" android:text="@string/hd" />
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style1" android:gravity="center" android:text="@string/ha" />
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style1" android:gravity="center" android:text="@string/dh" />
+		</TableRow>
+		<TableRow android:background="@drawable/itembg1">
+			<TextView android:id="@+id/hh" android:layout_width="80dp"
+				android:layout_height="25dp" style="@style/Style4" android:gravity="center" />
+			<TextView android:id="@+id/hd" android:layout_width="80dp"
+				android:layout_height="25dp" style="@style/Style4" android:gravity="center" />
+			<TextView android:id="@+id/ha" android:layout_width="80dp"
+				android:layout_height="25dp" style="@style/Style4" android:gravity="center" />
+			<TextView android:id="@+id/dh" android:layout_width="80dp"
+				android:layout_height="25dp" style="@style/Style4" android:gravity="center" />
+		</TableRow>
+		<TableRow android:background="@drawable/itembg">
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style1" android:gravity="center" android:text="@string/dd" />
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style1" android:gravity="center" android:text="@string/da" />
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style1" android:gravity="center" android:text="@string/ah" />
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style1" android:gravity="center" android:text="@string/ad" />
+		</TableRow>
+		<TableRow android:background="@drawable/itembg1">
+			<TextView android:id="@+id/dd" android:layout_width="80dp"
+				android:layout_height="25dp" style="@style/Style4" android:gravity="center" />
+			<TextView android:id="@+id/da" android:layout_width="80dp"
+				android:layout_height="25dp" style="@style/Style4" android:gravity="center" />
+			<TextView android:id="@+id/ah" android:layout_width="80dp"
+				android:layout_height="25dp" style="@style/Style4" android:gravity="center" />
+			<TextView android:id="@+id/ad" android:layout_width="80dp"
+				android:layout_height="25dp" style="@style/Style4" android:gravity="center" />
+		</TableRow>
+		<TableRow android:background="@drawable/itembg">
+			<TextView android:layout_width="80dp" android:layout_height="25dp"
+				style="@style/Style1" android:gravity="center" android:text="@string/aa" />
+		</TableRow>
+		<TableRow android:background="@drawable/itembg1">
+			<TextView android:id="@+id/aa" android:layout_width="80dp"
+				android:layout_height="25dp" style="@style/Style4" android:gravity="center" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

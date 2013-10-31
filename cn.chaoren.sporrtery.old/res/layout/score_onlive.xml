@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/allbg"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/tabbg" -->
+
+  <!-- 最顶部的条目 -->
+    <LinearLayout
+        android:id="@+id/tabsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:background="@drawable/titlebg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <!--
+            <TextView
+                android:id="@+id/zuqiu_tab"
+                style="@style/Style3"
+                android:layout_width="159dip"
+                android:layout_height="49dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_normal"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/str_zuqiu" />
+            -->
+     
+          <!-- 足球比分直播 -->
+            <TextView
+                android:id="@+id/zuqiu_tab"
+                android:layout_width="159dip"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/str_zuqiu_onlive"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:visibility="gone" >
+             <!-- 篮球 -->
+            <TextView
+                android:id="@+id/lanqiu_tab"
+                style="@style/Style3"
+                android:layout_width="159dip"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/str_lanqiu" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/zuqiu_time_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:layout_below="@+id/tabsLayout"
+        android:background="@drawable/titlebg" >
+
+        <LinearLayout
+            android:id="@+id/leagueSel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal" >
+
+            
+            <!-- 所有赛制 -->
+            <TextView
+                android:id="@+id/legualText"
+                style="@style/topStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/djxzls"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/basketLegualText"
+                style="@style/topStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/djxzls"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/icon"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_sel_selected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/playingSel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal" >
+
+            
+            <!-- 所有状态 -->
+            <TextView
+                android:id="@+id/statusText"
+                style="@style/topStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/all_status"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/basketStatusText"
+                style="@style/topStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/all_status"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/icon"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_sel_selected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:orientation="horizontal" >
+
+            <!-- 提示 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/tint_setting"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <!--
+                 <TextView
+                android:id="@+id/basketStatusText"
+                style="@style/topStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/all_status"
+                android:textColor="#000000" 
+                android:visibility="gone"/>
+            -->
+
+            <View
+                android:id="@+id/icon"
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_selected_right" />
+        </LinearLayout>
+
+        <!--
+        <LinearLayout
+            android:id="@+id/setting"
+            android:clickable="true" onClick="onClick"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" 
+            android:visibility="gone">
+			<TextView  android:gravity="center" android:layout_width="wrap_content" android:layout_height="24dip"
+			     android:text="@string/tint_setting" android:textColor="#000000" android:textSize="12sp"/>
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="24dip" 
+                android:text=">" android:textColor="#D87810" android:textSize="12sp"/>
+            <View
+                android:id="@+id/setting"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:background="@drawable/setting_selector"
+                android:clickable="true"
+                android:onClick="onClick" />
+        </LinearLayout>
+        -->
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/zuqiu_time_layout"
+        android:background="#fafafa" />
+
+    <!-- 足球栏目listview -->
+    <LinearLayout
+        android:id="@+id/soccerList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seperator"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/soccer_progress"
+            layout="@layout/progress_small" />
+
+        <ListView
+            android:id="@+id/allGameList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#ffffff"
+            android:divider="#bdbdbd"
+            android:dividerHeight="1dip"
+            android:scrollingCache="false"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- 篮球栏目listview -->
+    <LinearLayout
+        android:id="@+id/basketList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seperator"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/basket_progress"
+            layout="@layout/progress_small" />
+
+        <ListView
+            android:id="@+id/basketGameList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#ffffff"
+            android:divider="#bdbdbd"
+            android:dividerHeight="1dip"
+            android:scrollingCache="false" >
+        </ListView>
+    </LinearLayout>
+
+    <!--
+    <ListView
+        android:fadingEdgeLength="0dip"
+        android:layout_below="@+id/seperator"
+        android:id="@+id/basketGameList"
+        android:layout_width="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:layout_height="wrap_content"
+        android:divider="#bdbdbd"
+        android:dividerHeight="1dip" 
+        android:visibility="gone">
+    </ListView>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/score_alertbg"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- 确定 -->
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="76dip"
+                android:layout_height="32dip"
+                android:background="@drawable/live_btn_selector"
+                android:onClick="onClick"
+                android:text="@string/ok"
+                android:textColor="#ffffff" />
+             <!-- 取消 -->
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="76dip"
+                android:layout_height="32dip"
+                android:layout_marginLeft="25dip"
+                android:background="@drawable/live_btn_selector"
+                android:onClick="onClick"
+                android:text="@string/cancel"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

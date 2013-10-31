@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<TableRow android:background="@drawable/itembg1">
+		<TextView android:layout_width="75dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/l_cn"
+			android:singleLine="true" />
+		<TextView android:layout_width="65dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/date"
+			android:singleLine="true" />
+		<TextView android:layout_width="75dp" android:layout_height="25dp"
+			style="@style/Style7" android:gravity="center" android:id="@+id/h_cn"
+			android:singleLine="true" />
+		<TextView android:layout_width="30dp" android:layout_height="25dp"
+			style="@style/Style6" android:gravity="center" android:id="@+id/finaled"
+			android:singleLine="true" />
+		<TextView android:layout_width="75dp" android:layout_height="25dp"
+			style="@style/Style7" android:gravity="center" android:id="@+id/a_cn"
+			android:singleLine="true" />
+		<TextView android:layout_width="80dp" android:layout_height="25dp"
+			style="@style/Style1" android:gravity="center" android:id="@+id/goalline"
+			android:singleLine="true" android:visibility="gone" />
+		<TextView android:layout_width="50dp" android:layout_height="25dp"
+			style="@style/Style1" android:gravity="center" android:id="@+id/half"
+			android:singleLine="true" android:visibility="gone" />
+		<TextView android:layout_width="50dp" android:layout_height="25dp"
+			style="@style/Style1" android:gravity="center" android:id="@+id/hhad"
+			android:singleLine="true" android:visibility="gone" />
+		<TextView android:layout_width="50dp" android:layout_height="25dp"
+			style="@style/Style1" android:gravity="center" android:id="@+id/h1"
+			android:singleLine="true" android:visibility="gone" />
+		<TextView android:layout_width="50dp" android:layout_height="25dp"
+			style="@style/Style1" android:gravity="center" android:id="@+id/d1"
+			android:singleLine="true" android:visibility="gone" />
+		<TextView android:layout_width="50dp" android:layout_height="25dp"
+			style="@style/Style1" android:gravity="center" android:id="@+id/a1"
+			android:singleLine="true" android:visibility="gone" />
+		<TextView android:layout_width="50dp" android:layout_height="25dp"
+			style="@style/Style1" android:gravity="center" android:id="@+id/crs"
+			android:singleLine="true" android:visibility="gone" />
+		<TextView android:layout_width="80dp" android:layout_height="25dp"
+			style="@style/Style1" android:gravity="center" android:id="@+id/ttg"
+			android:singleLine="true" android:visibility="gone" />
+		<TextView android:layout_width="80dp" android:layout_height="25dp"
+			style="@style/Style1" android:gravity="center" android:id="@+id/hafu"
+			android:singleLine="true" android:visibility="gone" />
+	</TableRow>
+</TableLayout>
